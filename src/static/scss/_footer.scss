@@ -1,0 +1,42 @@
+.footer {
+    background-color: $color-white; /* Add a background color to the top navigation */
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    height: 95px;
+    top: 10vw;
+
+    img {
+		float: none;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+    transform: translate(-50%, -50%);
+    top: 3vw;
+	}
+  }
+
+
+  @media screen and (max-width: 600px) {
+	.footer {
+        background-color: $color-white; /* Add a background color to the top navigation */
+        position: relative;
+        left: 0;
+        bottom: 0;
+        width: 25vw;
+        text-align: center;
+        height: 55px;
+        top: 10vw;
+    
+        img {
+            float: none;
+            position: absolute;
+            top: 17vw;
+            left: 50vw;
+            transform: translate(-50%, -50%);
+            width: 25vw;
+        }
+      }
+}

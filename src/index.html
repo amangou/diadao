@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE,chrome=1">
+    <meta http-equiv="content-language" content="fr" />
+    <meta content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0' name='viewport' />
+    <title>Test Intégration</title>
+
+    <!--Liens et Fichiers CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/webfonts/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="static/dist/css/main.css">
+
+   
+    
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="main-container">
+
+        <!-- Top Nav -->
+        <div class="topnav navbar-sticky-top" id="myNavBar">
+            <!-- Menu Icon -->
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon-bar top-bar"></span>
+                <span class="icon-bar middle-bar"></span>
+                <span class="icon-bar bottom-bar"></span>				
+            </button>
+
+            <!-- Logo -->
+            <div class="topnav-centered">
+                <img alt="Yves Rocher" src="img/assets/logo.png" class="img-responsive" />
+              </div>
+          
+            <!-- Reserver Button -->
+            <div class="topnav-right">
+                <a href="#" class="btn-reserver">R&Eacute;SERVER</a>
+            </div>
+          
+        </div>
+        <!-- End Top Nav -->
+
+
+        <div class="content">
+
+            <!--Carousel-->
+            <!-- <div class="col-md-12"> -->
+                <div id="carousel-yves-rocher" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="img/assets/header.jpg" alt="First slide">
+                            </div>
+                        <div class="item">
+                            <img src="img/assets/header2.jpg" alt="Second slide">
+                          </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-yves-rocher" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carousel-yves-rocher" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                </div>
+                <div class="carousel-static-text">
+                    <div class="col-md-12 text-center">
+                        <img class="img-responsive carousel-img" alt="Yves Rocher" src="img/assets/natural_slowlife.png" />
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <p class="carousel-blue-text">Un temps pour retrouver, dans la nature, l’essence même du bien-être</p>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <button class="btn btn-default carousel-button" type="submit">D&Eacute;COUVRIR</button>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <p class="carousel-tel">TEL : +33 (0)2 99 08 50 50   •   RESA.HOTEL@YRNET.COM</p>
+                    </div>
+                </div>
+            <!-- </div> -->
+            <!--End Carousel-->
+
+            <!--Bloc Réveil-->
+            <div class="fixed-parallax">
+                <div class="image one"></div>
+                <div class="image two"></div>
+                <div class="text-reveil">
+                    <p class="heure">9:23</p>
+                    <p class="doux-reveil">UN DOUX R&Eacute;VEIL</p>
+                    <p class="nature-reveil">LAISSEZ LA NATURE VOUS <br/> R&Eacute;VEILLER TOUT EN DOUCEUR</p>
+                </div>
+            </div>
+            <!--End Bloc Réveil-->
+
+
+            <!--Bloc Détente-->
+            <div class="fixed-mirror">
+                <div class="image first"></div>
+                <div class="image second"></div>
+                <div class="text-detente">
+                    <p class="heure">11:07</p>
+                    <p class="relax">DETENTE. RELAXATION. SILENCE.</p>
+                    <p class="ressourcer">SE RESSOURCER, SE RETROUVER...
+                        <br>UN RITUEL POUR SOI POUR UNE
+                        <br>DOUCE ENTR&Eacute;E EN MATI&Egrave;RE</p>
+                </div>
+            </div>
+            <!--End Bloc Détente-->
+
+            <!--Bloc Card Offre-->
+            <div class="container">
+                <div class="card-deck">
+                    <div class="col-xs-12 col-md-6 col-lg-3">
+                        <div class="card">
+                            <img class="card-img-top" src="img/assets/offre1.jpg" alt="offre1">
+                            <div class="card-block">
+                                <h6 class="card-title">NOËL À LA GRÉE DES LANDES </h6>
+                                <p class="card-text">Le Bien-Être s'invite à Noël</p>
+
+                                    <a class="card-link tariff">490 EUR</a>
+                                    <a class="card-link nuitee">
+                                        <ul>
+                                            <li>2 personnes</li>
+                                            <li>1 nuitée</li>
+                                        </ul>
+                                    </a>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn-savoir-plus">EN SAVOIR PLUS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-3">
+                        <div class="card rs-card">
+                            <img class="card-img-top" src="img/assets/offre2.jpg" alt="offre2">
+                            <div class="card-block">
+                                <h6 class="card-title">RÉVEILLON DE LA SAINT-SYLVESTRE </h6>
+                                <p class="card-text">Un séjour d'exception pour la fin de l'année à partager avec vos amis ou votre famille.
+                                    Réservation jusqu’au 20/12/2017.
+                                </p>
+
+                                    <a class="card-link tariff rs-tariff">1042 EUR</a>
+                                    <a class="card-link nuitee">
+                                        <ul>
+                                            <li>2 personnes</li>
+                                            <li>1 nuitée</li>
+                                        </ul>
+                                    </a>
+                            </div>
+                            
+                            <div class="card-footer">
+                                <a href="#" class="btn-savoir-plus">EN SAVOIR PLUS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add the extra clearfix for only the required viewport -->
+                    <div class="clearfix hidden-sm-down hidden-lg-up"></div>
+                    <div class="col-xs-12 col-md-6 col-lg-3">
+                        <div class="card">
+                            <div class="hover14">
+                                <figure><img class="card-img-top" src="img/assets/offre3.jpg" alt="offre3"></figure>
+                            </div>
+                            <div class="card-block">
+                                <h6 class="card-title">COFFRETS CADEAUX</h6>
+                                <p class="card-text">
+                                    <a class="card-link cadeaux1 rs-cadeaux1">
+                                        <ul>
+                                            <li>Séjour</li>
+                                            <li>Soins & Bien Etre</li>
+                                            <li>Gastronomie</li>
+                                        </ul>
+                                    </a>
+                                    <a class="card-link cadeaux2 rs-cadeaux2">
+                                        <ul>
+                                            <li>Cabane d’exception</li>
+                                            <li>Chèque Cadeau</li>
+                                        </ul>
+                                    </a>
+                                
+                                </p>
+
+                                <a class="card-link tariff rs-tariff">48 EUR</a>
+                                <a class="card-link nuitee rs-nuitee">
+                                    <ul>
+                                        <li>2 personnes</li>
+                                    </ul>
+                                </a>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn-savoir-plus rs-btn-savoir-plus">TOUS NOS COFFRETS CADEAUX</a>
+                            </div>
+
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+            <!--End Bloc Card Offre-->
+
+        </div>
+    
+    </div>
+    <!-- End Main Container -->
+
+
+    <footer class="footer">
+        <div class="container">
+            <img alt="Yves Rocher" src="img/assets/logo.png" class="img-responsive" />
+        </div>
+      </footer>
+
+
+
+    <!--Librairies Javascripts/Bootstrap-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+
+     <!--Fichier JS-->
+     <script src="static/dist/js/script.js"></script>
+
+</body>
+
+</html>

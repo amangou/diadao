@@ -1,0 +1,235 @@
+.fixed-mirror {
+    padding: 7vw 10vw 10vw 14vw;
+    position: relative;
+    height:65vw;
+
+	.image { // basic parallax class
+            position : relative;
+            height : 100vh;
+            background-position: center top;
+            background-size: cover;
+    
+		
+		// individual parallax images
+		&.first {
+                  background-image: url('../../../img/assets/YRshoot1-2322-15.jpg');
+                  width: 30vw;
+                  height: 20vw;
+                  transform: scaleX(-1); //mirror effect
+                  top: 18vw;
+                  left: 10vw;
+                  z-index: 1;
+		}	
+		&.second {
+                  background-image: url('../../../img/assets/chambre22-123-15.jpg');
+                  width: 30vw;
+                  height: 40vw;
+                  top: -20vw;
+                  left: 35vw;
+                  background-size: cover;
+                  background-repeat: no-repeat;
+		}	
+	}
+}
+
+
+.text-detente {
+      position: relative;
+      text-align: center;
+      // padding: 50px 30px;
+      width: 35vw;
+      height: 10vw;
+      top: -56vw;
+      left: 5vw;
+      
+      .heure{
+          font-size: 14px;
+          color: #93A446;
+      }
+  
+      .relax{
+          font-size: 20px;
+          font-family: 'Lucida Sans Unicode';
+          font-weight: 700;
+          color: #000;
+      }
+  
+      .ressourcer {
+        font-size: 10px;
+        font-family: BrandonGrotesque-Light;
+        color: #574318;
+        letter-spacing: 3px;
+      }
+
+      .text-wrapper {
+		position: relative;
+		display: inline-block;
+		padding-top: 0.2em;
+		padding-right: 0.05em;
+		padding-bottom: 0.1em;
+		overflow: hidden;
+	}
+	.letter {
+		display: inline-block;
+		line-height: 1em;
+	}
+  }
+
+
+  @media screen and (max-width: 600px) {
+	.fixed-mirror {
+        padding: 3vw;
+        height: 80vw;
+
+        .image { // basic parallax class
+                position : relative;
+                height : 100vh;
+                background-position: center top;
+                background-size: cover;
+        
+            
+            // individual parallax images
+            &.first {
+                    background-image: url('../../../img/assets/YRshoot1-2322-15.jpg');
+                    width: 50vw;
+                    height: 32vw;
+                    -webkit-transform: scaleX(-1);
+                    transform: scaleX(-1);
+                    top: 34vw;
+                    left: 1vw;
+                    z-index: 1;
+            }	
+            &.second {
+                    background-image: url('../../../img/assets/chambre22-123-15.jpg');
+                    width: 50vw;
+                    height: 66vw;
+                    top: -30vw;
+                    left: 45vw;
+                    background-size: cover;
+            }	
+        }
+    }
+
+    .text-detente {
+        position: relative;
+        text-align: center;
+        // padding: 50px 30px;
+        width: 44vw;
+        height: 10vw;
+        top: -93vw;
+        left: 0vw;
+        
+        .heure{
+            font-size: 10px;
+            color: #93a446;
+        }
+    
+        .relax{
+            font-size: 2.5vw;
+            font-family: 'Didot';
+            font-weight: bold;
+            color:  #000;
+        }
+    
+        .ressourcer {
+            font-size: 8px;
+            font-family: Trebuchet MS;
+            color:  #000;
+            letter-spacing: 0em;
+        }
+  
+        .text-wrapper {
+          position: relative;
+          display: inline-block;
+          padding-top: 0.2em;
+          padding-right: 0.05em;
+          padding-bottom: 0.1em;
+          overflow: hidden;
+      }
+      .letter {
+          display: inline-block;
+          line-height: 1em;
+      }
+    }
+}
+
+/* iPad */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
+    .fixed-mirror {
+        padding: 3vw;
+        margin-top: 50px;
+        height: 75vw;
+
+        .image { // basic parallax class
+                position : relative;
+                height : 100vh;
+                background-position: center top;
+                background-size: cover;
+        
+            
+            // individual parallax images
+            &.first {
+                    background-image: url('../../../img/assets/YRshoot1-2322-15.jpg');
+                    width: 50vw;
+                    height: 32vw;
+                    -webkit-transform: scaleX(-1);
+                    transform: scaleX(-1);
+                    top: 33vw;
+                    left: 1vw;
+                    z-index: 1;
+            }	
+            &.second {
+                    background-image: url('../../../img/assets/chambre22-123-15.jpg');
+                    width: 48vw;
+                    height: 61vw;
+                    top: -30vw;
+                    left: 45vw;
+                    background-size: cover;
+            }	
+        }
+    }
+
+    .text-detente {
+        position: relative;
+        text-align: center;
+        // padding: 50px 30px;
+        width: 44vw;
+        height: 10vw;
+        top: -87vw;
+        left: 0vw;
+        
+        .heure{
+            font-size: 2vw;
+            color: #93A446;
+        }
+    
+        .relax{
+            font-size: 2.5vw;
+            font-family: 'Didot';
+            font-weight: bold;
+            color:  #000;
+        }
+    
+        .ressourcer {
+            font-size: 10px;
+            font-family: BrandonGrotesque-Light;
+            color:  #000;
+            letter-spacing: 3px;
+        }
+  
+        .text-wrapper {
+          position: relative;
+          display: inline-block;
+          padding-top: 0.2em;
+          padding-right: 0.05em;
+          padding-bottom: 0.1em;
+          overflow: hidden;
+      }
+      .letter {
+          display: inline-block;
+          line-height: 1em;
+      }
+    }
+}

@@ -1,0 +1,120 @@
+.carousel-static-text {
+    position: absolute;
+    top: 315px;
+    left: 9vw;
+    // width: 96.66666666666666%;
+    color: $color-white;
+
+    .carousel-img
+    {
+        position: relative;
+        vertical-align: middle;
+        top: 10vw;
+        left: 7vw;
+        width: 20vw;
+        height: 6vw;
+    }
+
+    .carousel-blue-text
+    {
+        position: absolute;
+        vertical-align: middle;
+        top: 14vw;
+        left: 7vw;
+        width: 22vw;
+        height: 6vw;
+        font-size: 13px;
+        color: $blue-caption;
+        /* font-family: 'SegoeUI, Segoe UI'; */
+        letter-spacing: 2px;
+    }
+
+    .carousel-button {
+        position: absolute;
+        vertical-align: middle;
+        top: 20vw;
+        left: 12vw;
+        width: 10vw;
+        height: 3vw;
+        background-color: transparent;
+        // font-family: 'AvantGarde-Book';
+        color: $blue-caption;
+        font-size: 12px;
+        // margin: 1.67em 0;
+        border-radius: 0 !important;
+        border-color: $blue-caption;
+        letter-spacing: 2px;
+    }
+
+    .carousel-tel {
+        position: relative;
+        color: $color-white;
+        font-size: 10px;
+        float: right;
+        right: -48vw;
+        top: 34vw;
+    }	
+}
+
+// .carousel-control-prev-icon {
+//     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+//   }
+
+.carousel-control.right {
+    right: 15px;
+    left: auto;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    width: 30px;
+    height: 30px;
+    color: $color-white;
+    text-align: center;
+    background-color: #FAFAFA;
+  }
+
+.arrows {
+	width: 15px;
+	height: 15px;
+	color: $color-white;
+	position: absolute;
+	top: 50%;
+    margin-top: 21px;
+    margin-left: 15px;
+}
+
+.prev {
+	border-bottom: 2px solid;
+	border-left: 2px solid;
+	transform: rotate(45deg);
+    left: 10px;
+    position: absolute;
+}
+
+.next {
+   border-bottom: 2px solid;
+   border-left: 2px solid;
+   transform: rotate(-135deg);
+   right: -95vw;
+ }
+
+.square-left {
+    height: 35px;
+    width: 35px;
+    background-color: $color-control;
+    margin-left: 10px;
+    margin-top: 20px;
+    opacity: 0.7;
+}
+
+.square-right {
+    height: 35px;
+    width: 35px;
+    background-color: $color-control;
+    margin-left: 1454px;
+    margin-top: 18px;
+    opacity: 0.7;
+}

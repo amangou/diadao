@@ -1,0 +1,62 @@
+.fixed-parallax {
+    padding: 7vw 10vw 10vw 10vw;
+    height: 45vw;
+
+	.image { // basic parallax class
+        position : relative;
+        height : 100vh;
+        background-attachment: fixed; // key
+        background-position: center top;
+        background-size: cover;
+    
+		
+		// individual parallax images
+		&.one {
+            background-image: url('../../../img/assets/Shoot1-433-15.jpg');
+            width: 55vw;
+            height: 35vw;
+            background-size: contain;
+            background-position: initial;
+		}	
+		&.two {
+            background-image: url('../../../img/assets/suite6-354-15.jpg');
+            width: 45vw;
+            height: 17vw;
+            top: -20vw;
+            left: 35vw;
+            // border: 1px solid;
+            background-size: contain;
+            background-position: right;
+            background-repeat: repeat-y;
+		}	
+	}
+}
+.text-reveil {
+    position: relative;
+	text-align: center;
+    // padding: 50px 30px;
+    width: 20vw;
+    height: 10vw;
+    top: -50vw;
+    left: 55vw;
+    
+    .heure{
+        font-size: 14px;
+        // font-family: 'Comic Sans MS';
+        color: #93A446;
+    }
+
+    .doux-reveil{
+        font-size: 20px;
+        font-family: 'Lucida Sans Unicode';
+        font-weight: bold;
+        color: #000;
+    }
+
+    .nature-reveil {
+        font-size: 10px;
+        font-family: BrandonGrotesque-Light;
+        color: #574318;
+        letter-spacing: 3px;
+    }
+}

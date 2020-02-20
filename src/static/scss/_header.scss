@@ -1,0 +1,101 @@
+/* Style the links inside the navigation bar */
+/* Change the color of links on hover */
+/* Add a color to the active/current link */
+/* Centered section inside the top navigation */
+/* Right-aligned section inside the top navigation */
+/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+.topnav {
+	background-color: $topnav-bg; /* Add a background color to the top navigation */
+    overflow: hidden;
+    height: 95px;
+}
+.topnav-centered {
+	img {
+		float: none;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+.topnav-right {
+    float: right;  
+}
+
+/* Menu Icon */
+.icon-bar {
+	width: 22px;
+	height: 2px;
+	background-color: $iconbar-bg;
+	display: block;
+	transition: all 0.2s;
+	margin-top: 6px;
+}
+
+.navbar-toggler {
+    margin-top: 2vw;
+    margin-left: 3vw;
+	border: none;
+    background: transparent !important;
+    
+	.top-bar {
+		transform: rotate(45deg);
+		transform-origin: 10% 10%;
+	}
+	.middle-bar {
+		opacity: 0;
+	}
+	.bottom-bar {
+		transform: rotate(-45deg);
+		transform-origin: 10% 90%;
+	}
+}
+.navbar-toggler.collapsed {
+	.top-bar {
+		transform: rotate(0);
+	}
+	.middle-bar {
+		opacity: 1;
+	}
+	.bottom-bar {
+		transform: rotate(0);
+	}
+}
+/* End Menu Icon */
+
+/* Bouton Reserver */
+.btn-reserver {
+	margin-top: -5vw;
+	margin-right: 3vw;
+	padding: 1vw 2vw;
+	line-height: 1vw;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	cursor: pointer;
+	transition: background 0.1s ease-in-out;
+	-webkit-transition: background 0.1s ease-in-out;
+	-moz-transition: background 0.1s ease-in-out;
+	-ms-transition: background 0.1s ease-in-out;
+	-o-transition: background 0.1s ease-in-out;
+	color: $color-white;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 0;
+	font-size: 11px;
+	font-family: SegoeUI,Segoe UI;
+	letter-spacing: .1em;
+	background-color: $btngreen-bg;
+	text-decoration: none;
+	&:hover {
+        background-color: $btngreen-hover;
+        text-decoration: none;
+        color: $color-white;
+	}
+	&:active {
+        box-shadow: 0px 1px 0px 0px $btngreen-hover;
+        text-decoration: none;
+        color: $color-white;
+	}
+}
+ /* End Bouton Reserver */

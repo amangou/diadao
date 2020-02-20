@@ -1,0 +1,696 @@
+/*********** Top Nav ***********/
+@media screen and (max-width: 600px) {
+	.topnav {
+        background-color: $topnav-bg; 
+        overflow: hidden;
+        height: 50px;
+    }
+    .topnav-centered {
+        img {
+            float: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 25vw;
+        }
+    }
+    .topnav-right {
+        a{
+            margin-top: -17vw;
+        }
+        
+	}
+	
+	.btn-reserver {
+		margin-top: -5vw;
+		font-size: 11px;
+		font-family: SegoeUI,Segoe UI;
+		letter-spacing: .1em;
+		line-height: 4vw;
+	}
+}
+/*********** End Top Nav ***********/
+
+
+/*********** Carousel ***********/
+@media screen and (max-width: 600px) {
+	.carousel-static-text {
+        position: relative;
+        top: -49vw;
+        left: 9vw;
+        color: $color-white;
+    
+        .carousel-img
+        {
+            position: relative;
+            vertical-align: middle;
+            top: 8vw;
+            left: 5vw;
+            width: 25vw;
+            height: 7vw;
+
+        }
+    
+        .carousel-blue-text
+        {
+            position: absolute;
+            vertical-align: middle;
+            top: 9vw;
+            left: 1vw;
+            width: 43vw;
+            height: 6vw;
+            font-size: 2vw;
+            color: $blue-caption;
+            letter-spacing: 2px;
+        }
+    
+        .carousel-button {
+            position: absolute;
+            vertical-align: middle;
+            top: 20vw;
+            left: 9vw;
+            width: 22vw;
+            height: 6vw;
+            background-color: transparent;
+            color: $blue-caption;
+            font-size: 2vw;
+            border-radius: 0!important;
+            border-color: $blue-caption;
+            letter-spacing: 2px;
+        }
+    
+        .carousel-tel {
+            position: relative;
+            color: $color-white;
+            font-size: 6px;
+            float: right;
+            right: 6vw;
+            top: 37vw;
+        }	
+    }
+
+    .arrows {
+        width: 11px;
+        height: 11px;
+        color: $color-white;
+        position: absolute;
+        top: 50%;
+        margin-top: -5px;
+        margin-left: 6px;
+    }
+
+    .prev {
+        border-bottom: 2px solid;
+        border-left: 2px solid;
+        transform: rotate(45deg);
+        left: 26px;
+        position: absolute;
+    }
+
+    .next {
+        border-bottom: 2px solid;
+        border-left: 2px solid;
+        transform: rotate(-135deg);
+        right: -89vw;
+        position: absolute;
+      }
+
+      .square-left {
+        height: 18px;
+        width: 18px;
+        background-color:$color-control;
+        margin-left: 27px;
+        margin-top: -4px;
+      }
+
+      .square-right {
+        height: 18px;
+        width: 18px;
+        background-color: $color-control;
+        margin-top: -4px;
+        margin-left: 320px;
+    }
+}
+
+/* iPad */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
+    .carousel-static-text {
+        position: relative;
+        top: -49vw;
+        left: 9vw;
+        // width: 96.66666666666666%;
+        color: #FFF;
+    
+        .carousel-img
+        {
+            position: relative;
+            vertical-align: middle;
+            top: 8vw;
+            left: 5vw;
+            width: 25vw;
+            height: 7vw;
+
+        }
+    
+        .carousel-blue-text
+        {
+            position: absolute;
+            vertical-align: middle;
+            top: 9vw;
+            left: 1vw;
+            width: 43vw;
+            height: 6vw;
+            font-size: 2vw;
+            color: $blue-caption;
+            letter-spacing: 2px;
+        }
+    
+        .carousel-button {
+            position: absolute;
+            vertical-align: middle;
+            top: 20vw;
+            left: 9vw;
+            width: 22vw;
+            height: 6vw;
+            background-color: transparent;
+            color: $blue-caption;
+            font-size: 2vw;
+            border-radius: 0!important;
+            border-color: $blue-caption;
+            letter-spacing: 2px;
+        }
+    
+        .carousel-tel {
+            position: relative;
+            color: $color-white;
+            font-size: 7px;
+            float: right;
+            right: 9vw;
+            top: 39vw;
+        }	
+    }
+
+    .arrows {
+        width: 11px;
+        height: 11px;
+        color: $color-white;
+        position: absolute;
+        top: 50%;
+        margin-top: -5px;
+        margin-left: 6px;
+    }
+
+    .prev {
+        border-bottom: 2px solid;
+        border-left: 2px solid;
+        transform: rotate(45deg);
+        left: 10px;
+        position: absolute;
+    }
+
+    .next {
+        border-bottom: 2px solid;
+        border-left: 2px solid;
+        transform: rotate(-135deg);
+        right: -93vw;
+        position: absolute;
+      }
+
+      .square-left {
+        height: 18px;
+        width: 18px;
+        background-color: $color-control;
+        margin-left: 10px;
+        margin-top: -4px;
+      }
+
+      .square-right {
+        height: 18px;
+        width: 18px;
+        background-color: $color-control;
+        margin-top: -4px;
+        margin-left: 714px;
+    }
+}
+/*********** End Carousel ***********/
+
+/*********** Bloc Réveil ***********/
+@media screen and (max-width: 600px) {
+	.fixed-parallax {
+        padding: 3vw;
+    
+        .image { // basic parallax class
+            position : relative;
+            height : 100vh;
+            background-attachment: scroll; // key
+            background-position: center top;
+            background-size: cover;
+        
+            
+            // individual parallax images
+            &.one {
+                background-image: url(../../../img/assets/Shoot1-433-15.jpg);
+                width: 62%;
+                height: 100%;
+                top: -2vw;
+                background-size: cover;
+            }	
+            &.two {
+                background-image: url(../../../img/assets/suite6-354-15.jpg);
+                width: 52%;
+                top: -21vw;
+                left: 47vw;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }	
+        }
+    }
+
+    .text-reveil {
+        position: relative;
+        text-align: center;
+        width: 35vw;
+        height: 10vw;
+        top: -62vw;
+        left: 58vw;
+        
+        .heure{
+            font-size: 10px;
+            color: #93A446;
+        }
+    
+        .doux-reveil{
+            font-size: 2vw;
+            font-family: 'Lucida Sans Unicode';
+            font-weight: bold;
+            color: #000;
+        }
+    
+        .nature-reveil {
+            font-size: 8px;
+            color: #574318;
+            font-family: Trebuchet MS;
+            letter-spacing: 0em;
+        }
+    }
+}
+
+/* iPad */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
+    .fixed-parallax {
+        padding: 3vw;
+    
+        .image { // basic parallax class
+            position : relative;
+            height : 100vh;
+            background-attachment: scroll; // key
+            background-position: center top;
+            background-size: cover;
+            
+            
+            // individual parallax images
+            &.one {
+                background-image: url(../../../img/assets/Shoot1-433-15.jpg);
+                width: 59%;
+                /* height: 100%; */
+                top: 11vw;
+                /* left: -4vw; */
+                background-size: cover;
+                /* background-position: initial; */
+                /* background-repeat: no-repeat; */
+            }	
+            &.two {
+                background-image: url(../../../img/assets/suite6-354-15.jpg);
+                width: 52%;
+                /* height: 51%; */
+                top: -10vw;
+                left: 47vw;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }	
+        }
+    }
+
+    .text-reveil {
+        position: relative;
+        text-align: center;
+        // padding: 50px 30px;
+        width: 35vw;
+        height: 10vw;
+        top: -44vw;
+        left: 54vw;
+        
+        .heure{
+            font-size: 2vw;
+            color: #93A446;
+        }
+    
+        .doux-reveil{
+            font-size: 2vw;
+            font-family: 'Lucida Sans Unicode';
+            font-weight: bold;
+            color: #000;
+        }
+    
+        .nature-reveil {
+            font-size: 10px;
+            font-family: BrandonGrotesque-Light;
+            color: #574318;
+            letter-spacing: 3px;
+        }
+    }
+}
+/*********** End Bloc Réveil ***********/
+
+/*********** End Bloc Détente ***********/
+@media screen and (max-width: 600px) {
+	.fixed-mirror {
+        padding: 3vw;
+        height: 80vw;
+
+        .image { // basic parallax class
+                position : relative;
+                height : 100vh;
+                background-position: center top;
+                background-size: cover;
+        
+            
+            // individual parallax images
+            &.first {
+                    background-image: url('../../../img/assets/YRshoot1-2322-15.jpg');
+                    width: 50vw;
+                    height: 32vw;
+                    -webkit-transform: scaleX(-1);
+                    transform: scaleX(-1);
+                    top: 34vw;
+                    left: 1vw;
+                    z-index: 1;
+            }	
+            &.second {
+                    background-image: url('../../../img/assets/chambre22-123-15.jpg');
+                    width: 50vw;
+                    height: 66vw;
+                    top: -30vw;
+                    left: 45vw;
+                    background-size: cover;
+            }	
+        }
+    }
+
+    .text-detente {
+        position: relative;
+        text-align: center;
+        // padding: 50px 30px;
+        width: 44vw;
+        height: 10vw;
+        top: -93vw;
+        left: 0vw;
+        
+        .heure{
+            font-size: 10px;
+            color: #93a446;
+        }
+    
+        .relax{
+            font-size: 2.5vw;
+            font-family: 'Didot';
+            font-weight: bold;
+            color:  #000;
+        }
+    
+        .ressourcer {
+            font-size: 8px;
+            font-family: Trebuchet MS;
+            color:  #000;
+            letter-spacing: 0em;
+        }
+  
+        .text-wrapper {
+          position: relative;
+          display: inline-block;
+          padding-top: 0.2em;
+          padding-right: 0.05em;
+          padding-bottom: 0.1em;
+          overflow: hidden;
+      }
+      .letter {
+          display: inline-block;
+          line-height: 1em;
+      }
+    }
+}
+
+/* iPad */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
+    .fixed-mirror {
+        padding: 3vw;
+        margin-top: 50px;
+        height: 75vw;
+
+        .image { // basic parallax class
+                position : relative;
+                height : 100vh;
+                background-position: center top;
+                background-size: cover;
+        
+            
+            // individual parallax images
+            &.first {
+                    background-image: url('../../../img/assets/YRshoot1-2322-15.jpg');
+                    width: 50vw;
+                    height: 32vw;
+                    -webkit-transform: scaleX(-1);
+                    transform: scaleX(-1);
+                    top: 33vw;
+                    left: 1vw;
+                    z-index: 1;
+            }	
+            &.second {
+                    background-image: url('../../../img/assets/chambre22-123-15.jpg');
+                    width: 48vw;
+                    height: 61vw;
+                    top: -30vw;
+                    left: 45vw;
+                    background-size: cover;
+            }	
+        }
+    }
+
+    .text-detente {
+        position: relative;
+        text-align: center;
+        // padding: 50px 30px;
+        width: 44vw;
+        height: 10vw;
+        top: -87vw;
+        left: 0vw;
+        
+        .heure{
+            font-size: 2vw;
+            color: #93A446;
+        }
+    
+        .relax{
+            font-size: 2.5vw;
+            font-family: 'Didot';
+            font-weight: bold;
+            color:  #000;
+        }
+    
+        .ressourcer {
+            font-size: 10px;
+            font-family: BrandonGrotesque-Light;
+            color:  #000;
+            letter-spacing: 3px;
+        }
+  
+        .text-wrapper {
+          position: relative;
+          display: inline-block;
+          padding-top: 0.2em;
+          padding-right: 0.05em;
+          padding-bottom: 0.1em;
+          overflow: hidden;
+      }
+      .letter {
+          display: inline-block;
+          line-height: 1em;
+      }
+    }
+}
+/*********** End Bloc Détente ***********/
+
+/*********** Bloc Card Offre ***********/
+@media screen and (max-width: 600px) {
+    .card-deck {
+        padding:6vw;
+    }
+    .card {
+        padding-left:auto;
+        padding-right:auto;
+       //  min-height:500px;
+        margin-top:10vw;
+       box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+       -webkit-transition: .25s box-shadow;
+       transition: .25s box-shadow;
+       width: 70vw;
+       height: 82vw;
+      }
+
+      .rs-card{
+        margin-top: 16vw;
+      }
+
+      .card-img-top {
+        margin-top: -11vw;
+        position: relative;
+        padding: 1vw;
+        width: 60vw;
+        margin-left: 5vw;
+        height: 35vw;
+    }
+
+    .card-title {
+        font-family: SegoeUI,Segoe UI;
+        font-weight: 700;
+        text-align: left;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        font-size: 10px;
+    }
+
+    .btn-savoir-plus {
+        // margin-top: -3vw;
+        margin-right: 3vw;
+        padding: 2vw 2vw;
+        line-height: 1vw;
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+        cursor: pointer;
+        transition: background .1s ease-in-out;
+        -webkit-transition: background .1s ease-in-out;
+        -moz-transition: background .1s ease-in-out;
+        -ms-transition: background .1s ease-in-out;
+        -o-transition: background .1s ease-in-out;
+        color: #fff;
+        border-radius: 0;
+        background-color: #93a446;
+        text-decoration: none;
+        font-weight: 500;
+        width: 50vw;
+        font-size: 11px;
+        font-family: SegoeUI,Segoe UI;
+        letter-spacing: .1em;
+        text-decoration: none;
+        color: #fff;
+        position: absolute;
+        top: 76vw;
+        left: 9vw;
+    }
+
+    .rs-btn-savoir-plus{
+        left: 4vw;
+        width: 60vw;
+    }
+
+    .tariff {
+        margin-left: -27vw;
+        position: absolute;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: SegoeUI,Segoe UI;
+        font-weight: 300;
+        letter-spacing: 1px;
+        text-align: left;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        margin-top: 2vw;
+        top: 45vw;
+        color: #8f6e2c;
+    }
+
+    .rs-tariff{
+        top: 57vw;
+    }
+
+    .nuitee {
+        margin-left: 4vw; 
+        text-decoration: none;
+        font-size: 11px;
+        font-family: SegoeUI,Segoe UI;
+        font-weight: 300;
+        letter-spacing: 1px;
+        /* text-align: right; */
+        padding-left: 1vw;
+        color: #8f6e2c;
+        position: relative;
+        top: -3vw;
+        left: 1vw;
+    }
+
+    .rs-cadeaux1 {
+        margin-left: -31vw;
+        top: 34vw;
+    }
+
+    .rs-cadeaux2 {
+        top: 46vw;
+        left: 0vw;
+    }
+
+    .rs-nuitee{
+        top: 17vw;
+    }
+    
+}
+
+
+/* iPad */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
+    .card {
+        margin-top: 15vw;
+        height: 35vw;
+        width: 40vw;
+        margin-left: 1vw;
+    }
+
+    .card-img-top {
+        height: 18vw;
+        width: 27vw;
+        margin-left: 7vw;
+    }
+
+    .tariff {
+        margin-left: -17vw;
+        top: 22vw;
+    }
+
+    .nuitee{
+        top: 24vw;
+    }
+
+    .cadeaux1{
+        top: 14vw;
+        margin-left: -18vw;
+    }
+
+    .cadeaux2{
+        top: 14vw;
+    }
+
+    .btn-savoir-plus{
+        width : 30vw;
+    }
+}
+
+/*********** End Bloc Card Offre ***********/
